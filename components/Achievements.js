@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 import React from "react";
 
 import Inner from "./Inner";
@@ -167,6 +167,7 @@ const Achievements = () => {
           <CustomText>Available on Request</CustomText>
         </View>
       </View>
+      <Image style={styles.image} source={require("../assets/icon.png")} />
     </>
   );
 };
@@ -183,5 +184,10 @@ const styles = StyleSheet.create({
   text: {
     fontWeight: "700",
     fontStyle: "italic",
+  },
+
+  image: {
+    width: 50,
+    height: 50,
   },
 });
