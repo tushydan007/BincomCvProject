@@ -167,7 +167,17 @@ const Achievements = () => {
           <CustomText>Available on Request</CustomText>
         </View>
       </View>
-      <Image style={styles.image} source={require("../assets/icon.png")} />
+      <View style={styles.picturesContainer}>
+        <Image
+          style={styles.image}
+          source={require("../assets/bincom 1.jpg")}
+        />
+        <Image
+          style={styles.image}
+          source={require("../assets/bincom 4.jpg")}
+        />
+        <Image style={styles.image} source={require("../assets/bincom6.jpg")} />
+      </View>
     </>
   );
 };
@@ -187,7 +197,11 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 50,
-    height: 50,
+    width: 100,
+    height: 100,
+  },
+  picturesContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
 });
