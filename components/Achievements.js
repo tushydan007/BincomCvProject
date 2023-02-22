@@ -168,15 +168,9 @@ const Achievements = () => {
         </View>
       </View>
       <View style={styles.picturesContainer}>
-        <Image
-          style={styles.image}
-          source={require("../assets/bincom 1.jpg")}
-        />
-        <Image
-          style={styles.image}
-          source={require("../assets/bincom 4.jpg")}
-        />
+        <Image style={styles.image} source={require("../assets/bincom1.jpg")} />
         <Image style={styles.image} source={require("../assets/bincom6.jpg")} />
+        <Image style={styles.image} source={require("../assets/bincom2.jpg")} />
       </View>
     </>
   );
@@ -199,6 +193,7 @@ const styles = StyleSheet.create({
   image: {
     width: 100,
     height: 100,
+    marginTop: 20,
   },
   picturesContainer: {
     flexDirection: "row",
